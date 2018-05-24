@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rss="http://purl.org/rss/1.0/"
+  xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+
+  <rss:channel rdf:about="https://capitadiscovery.co.uk/islington/items.rss?query=The%20Saturnian%20Andy%20Weir%20AND%20format%3A%28book%29">
+    <rss:link rdf:resource="https://capitadiscovery.co.uk/islington/items.rss?query=The%20Saturnian%20Andy%20Weir%20AND%20format%3A%28book%29" />
+    <rss:title>Search results for The Saturnian Andy Weir AND format:(book)</rss:title>
+    <os:startIndex>0</os:startIndex>
+    <os:itemsPerPage>10</os:itemsPerPage>
+    <os:totalResults>0</os:totalResults>
+    <rss:items rdf:resource="urn:uuid:c6a90202-de0a-5452-ac69-cc33a339e5a8" />
+  </rss:channel>
+
+  <rdf:Seq rdf:about="urn:uuid:c6a90202-de0a-5452-ac69-cc33a339e5a8">
+  </rdf:Seq>
+
+</rdf:RDF>
