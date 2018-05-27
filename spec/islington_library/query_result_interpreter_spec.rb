@@ -9,11 +9,11 @@ RSpec.describe IslingtonLibrary::QueryResultInterpreter do
   let(:parsed_query_result_xml) do
     Nokogiri::XML(File.read(File.expand_path(query_result_file_path, File.dirname(__FILE__))))
   end
-
+  let(:query_result_file_path) { "../fixtures/query_results/#{fixture_filename}" }
   let(:requested_title) { "The Fake Book: A subtitle that's slightly different" }
 
   describe "#initialize" do
-    let(:query_result_file_path) { "../fixtures/query_results/four_items_incl_two_non_books_and_one_dud.xml" }
+    let(:fixture_filename) { "four_items_incl_two_non_books_and_one_dud.xml" }
 
     it "filters out non-book items and unlikely matches" do
       filtered_doc = subject.instance_variable_get(:@doc)
@@ -26,7 +26,7 @@ RSpec.describe IslingtonLibrary::QueryResultInterpreter do
 
   describe "#result" do
     context "when there are book items" do
-      let(:query_result_file_path) { "../fixtures/query_results/two_items.xml" }
+      let(:fixture_filename) { "two_items.xml" }
       let(:requested_title) { "The Martian" }
 
       it "returns the newer book" do
@@ -38,10 +38,21 @@ RSpec.describe IslingtonLibrary::QueryResultInterpreter do
         expect(result.book.title).to eq("The Martian")
         expect(result.book.author).to eq("Weir, Andy, author.")
       end
+
+      context "when the book officially has one or more editors instead of authors" do
+        let(:fixture_filename) { "one_item_with_contributors_instead_of_creators.xml" }
+        let(:requested_title) { "The Recovery Letters: Addressed to People Experiencing Depression" }
+
+        it "doesn't blow up and treats the first editor as the author" do
+          result = subject.result
+
+          expect(result.book.author).to eq("Sagan, Olivia, editor.")
+        end
+      end
     end
 
     context "when there are no book items" do
-      let(:query_result_file_path) { "../fixtures/query_results/zero_items.xml" }
+      let(:fixture_filename) { "zero_items.xml" }
 
       it "returns a result with no book" do
         result = subject.result

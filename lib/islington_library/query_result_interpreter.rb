@@ -20,7 +20,7 @@ module IslingtonLibrary
       SearchResult.new(
         Book.new(
           title: value_for_newest_item("rss:title"),
-          author: value_for_newest_item("dc:creator"),
+          author: value_for_newest_item("dc:creator") || value_for_newest_item("dc:contributor"),
           year: value_for_newest_item("dc:date"),
           link: value_for_newest_item("rss:link"),
           isbn: value_for_newest_item("bibo:isbn")
@@ -58,7 +58,9 @@ module IslingtonLibrary
     end
 
     def value_for_newest_item(xpath)
-      newest_item.xpath(xpath).first.text
+      element = newest_item.xpath(xpath).first
+      return unless element
+      element.text
     end
 
     def format_matches?(item_formats)

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rss="http://purl.org/rss/1.0/"
+  xmlns:os="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:bibo="http://purl.org/ontology/bibo/">
+
+  <rss:channel rdf:about="https://capitadiscovery.co.uk/islington/items.rss?query=The%20Recovery%20Letters%20Olivia%20Sagan%20AND%20format%3A%28book%29">
+    <rss:link rdf:resource="https://capitadiscovery.co.uk/islington/items.rss?query=The%20Recovery%20Letters%20Olivia%20Sagan%20AND%20format%3A%28book%29" />
+    <rss:title>Search results for The Recovery Letters Olivia Sagan...</rss:title>
+    <os:startIndex>0</os:startIndex>
+    <os:itemsPerPage>10</os:itemsPerPage>
+    <os:totalResults>1</os:totalResults>
+    <rss:items rdf:resource="urn:uuid:9a5fef82-6931-59a0-854f-7691c984fd6b" />
+  </rss:channel>
+
+  <rdf:Seq rdf:about="urn:uuid:9a5fef82-6931-59a0-854f-7691c984fd6b">
+    <rdf:_1 rdf:resource="http://capitadiscovery.co.uk/islington/items/882178" />
+  </rdf:Seq>
+
+  <rss:item rdf:about="http://capitadiscovery.co.uk/islington/items/882178">
+    <rss:link>http://capitadiscovery.co.uk/islington/items/882178</rss:link>
+    <rss:title>The recovery letters: addressed to people experiencing depression</rss:title>
+    <rss:description>An anthology of inspirational, heartfelt letters written by people who have recovered or are recovering from depression and addressed to those who are currently affected by it with additional resources for recovery.</rss:description>
+    <dc:contributor>Sagan, Olivia, editor.</dc:contributor>
+    <dc:contributor>Withey, James, editor.</dc:contributor>
+    <dcterms:language rdf:datatype="http://purl.org/dc/terms/ISO639-2">eng</dcterms:language>
+    <dc:format>Paperback</dc:format>
+    <dc:format>Book</dc:format>
+    <dc:publisher>London: Jessica Kingsley Publishers, 2017</dc:publisher>
+    <dc:date>2017</dc:date>
+    <bibo:isbn>1785921835</bibo:isbn>
+    <bibo:isbn>9781785921834</bibo:isbn>
+    <bibo:eanucc13>9781785921834</bibo:eanucc13>
+    <dcterms:identifier>882178</dcterms:identifier>
+  </rss:item>
+
+</rdf:RDF>
