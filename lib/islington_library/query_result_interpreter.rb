@@ -76,7 +76,7 @@ module IslingtonLibrary
     end
 
     def fuzzy_string_match
-      @fuzzy_string_match ||= FuzzyStringMatch::JaroWinkler.create(:native)
+      @fuzzy_string_match ||= FuzzyStringMatch::JaroWinkler.create
     end
   end
 end
