@@ -49,6 +49,18 @@ RSpec.describe IslingtonLibrary::QueryResultInterpreter do
           expect(result.book.author).to eq("Sagan, Olivia, editor.")
         end
       end
+
+      context "when the book does not have a published date" do
+        let(:fixture_filename) { "two_items_with_one_dateless.xml" }
+        let(:requested_title) { "Becoming" }
+
+        it "doesn't blow up and just returns the first item" do
+          result = subject.result
+
+          expect(result.book.author).to eq("Obama, Michelle.")
+          expect(result.book.year).to be_nil
+        end
+      end
     end
 
     context "when there are no book items" do

@@ -50,11 +50,15 @@ module IslingtonLibrary
     end
 
     def newest_item
-      @item ||= @doc.xpath("//rss:item/dc:date").
-        sort_by{ |el| el.text }.
-        reverse.
-        first.
-        parent
+      @item = if @doc.xpath("//rss:item/dc:date").empty?
+        @doc.xpath("//rss:item").first
+      else
+        @doc.xpath("//rss:item/dc:date").
+          sort_by{ |el| el.text }.
+          reverse.
+          first.
+          parent
+      end
     end
 
     def value_for_newest_item(xpath)

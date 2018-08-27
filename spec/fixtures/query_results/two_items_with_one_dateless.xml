@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rss="http://purl.org/rss/1.0/"
+  xmlns:os="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:bibo="http://purl.org/ontology/bibo/">
+
+  <rss:channel rdf:about="https://capitadiscovery.co.uk/islington/items.rss?query=Becoming%20Michelle%20Obama%20AND%20format%3A%28book%29">
+    <rss:link rdf:resource="https://capitadiscovery.co.uk/islington/items.rss?query=Becoming%20Michelle%20Obama%20AND%20format%3A%28book%29" />
+    <rss:title>Search results for Becoming Michelle Obama AND format:(book)</rss:title>
+    <os:startIndex>0</os:startIndex>
+    <os:itemsPerPage>10</os:itemsPerPage>
+    <os:totalResults>2</os:totalResults>
+    <rss:items rdf:resource="urn:uuid:9f28df90-afd6-5202-bc14-99d2f55287de" />
+  </rss:channel>
+
+  <rdf:Seq rdf:about="urn:uuid:9f28df90-afd6-5202-bc14-99d2f55287de">
+    <rdf:_1 rdf:resource="http://capitadiscovery.co.uk/islington/items/888481" />
+    <rdf:_2 rdf:resource="http://capitadiscovery.co.uk/islington/items/873209" />
+  </rdf:Seq>
+
+  <rss:item rdf:about="http://capitadiscovery.co.uk/islington/items/888481">
+    <rss:link>http://capitadiscovery.co.uk/islington/items/888481</rss:link>
+    <rss:title>Becoming</rss:title>
+    <dc:creator>Obama, Michelle.</dc:creator>
+    <dcterms:language rdf:datatype="http://purl.org/dc/terms/ISO639-2">eng</dcterms:language>
+    <dc:format>Book</dc:format>
+    <dc:publisher>Viking</dc:publisher>
+    <bibo:isbn>0241334144</bibo:isbn>
+    <bibo:isbn>9780241334140</bibo:isbn>
+    <bibo:eanucc13>9780241334140</bibo:eanucc13>
+    <dcterms:identifier>888481</dcterms:identifier>
+  </rss:item>
+
+  <rss:item rdf:about="http://capitadiscovery.co.uk/islington/items/873209">
+    <rss:link>http://capitadiscovery.co.uk/islington/items/873209</rss:link>
+    <rss:title>50 women&#039;s fashion icons that changed the world</rss:title>
+    <rss:description>Fashion is a powerful thing. It can be used for self-expression, to make a political statement, or simply to attract attention. Through this stunning collection, discover how these 50 trendsetters - from Twiggy to Wallis Simpson, Tilda Swinton to Michelle Obama - have used fashion to assert their po</rss:description>
+    <dc:creator>Cochrane, Lauren, author.</dc:creator>
+    <dcterms:language rdf:datatype="http://purl.org/dc/terms/ISO639-2">eng</dcterms:language>
+    <dc:format>Book</dc:format>
+    <dc:publisher>London: Conran Octopus, 2016</dc:publisher>
+    <dc:date>2016</dc:date>
+    <bibo:isbn>184091727X</bibo:isbn>
+    <bibo:isbn>9781840917277</bibo:isbn>
+    <bibo:eanucc13>9781840917277</bibo:eanucc13>
+    <dcterms:identifier>873209</dcterms:identifier>
+  </rss:item>
+
+</rdf:RDF>
