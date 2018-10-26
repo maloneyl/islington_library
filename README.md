@@ -1,6 +1,6 @@
 # IslingtonLibrary
 
-This gem helps you search the Islington Library's catalogue for a book by the given author and title. Non-book items are excluded, and
+This gem helps you search the Islington Library's catalogue for a book by the given author and title.
 
 ## Installation
 
